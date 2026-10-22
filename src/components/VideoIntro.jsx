@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import envelopeImg from '../assets/envelope.png';
 
 export default function VideoIntro({ onOpen }) {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const videoRef = useRef(null);
   const introRef = useRef(null);
   const hasTriggeredRef = useRef(false);
@@ -9,28 +10,19 @@ export default function VideoIntro({ onOpen }) {
   const handleTriggerOpen = () => {
     if (hasTriggeredRef.current) return;
     hasTriggeredRef.current = true;
-    
-    // Create bright flash transition effect
-    const flashEl = document.createElement('div');
-    flashEl.className = 'bright-flash';
-    document.body.appendChild(flashEl);
-    
-    // Fade in flash
-    flashEl.style.opacity = '1';
+
+    if (introRef.current) {
+      introRef.current.classList.add('fade-out');
+    }
     
     setTimeout(() => {
       onOpen();
-      if (introRef.current) {
-        introRef.current.style.display = 'none';
-      }
-      setTimeout(() => {
-        flashEl.style.opacity = '0';
-        setTimeout(() => flashEl.remove(), 1000);
-      }, 200);
     }, 800);
   };
 
   const handleEnvelopeClick = () => {
+    if (!isImageLoaded) return;
+    
     // Play audio
     const bgAudio = document.getElementById('bg-music');
     if (bgAudio) {
@@ -47,7 +39,7 @@ export default function VideoIntro({ onOpen }) {
       ref={introRef}
       style={{ backgroundColor: '#fdfbf7' }}
     >
-      <div className="envelope-wrapper">
+      <div className={`envelope-wrapper ${isImageLoaded ? 'ready' : 'loading'}`}>
         <div 
           className="envelope"
           onClick={handleEnvelopeClick}
@@ -72,6 +64,7 @@ export default function VideoIntro({ onOpen }) {
             src={envelopeImg} 
             alt="Envelope Front" 
             className="envelope-front"
+            onLoad={() => setIsImageLoaded(true)}
           />
           
           {/* Top Flap */}

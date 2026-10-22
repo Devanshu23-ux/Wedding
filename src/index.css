@@ -127,17 +127,21 @@ a {
 
 /* Envelope Animation */
 .envelope-wrapper {
-  height: 100dvh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 90vw;
+  max-width: 440px;
+  height: clamp(500px, 75vh, 750px);
   perspective: 2000px;
-  background-color: #fdfbf7;
-  position: fixed;
-  inset: 0;
-  z-index: 10000;
-  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.envelope-wrapper.ready {
+  opacity: 1;
+}
+
+.envelope-wrapper.loading {
+  opacity: 0;
 }
 
 .envelope {
