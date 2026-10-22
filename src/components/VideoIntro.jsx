@@ -47,7 +47,8 @@ export default function VideoIntro({ onOpen }) {
           {/* Back of the envelope */}
           <div className="envelope-back"></div>
           
-          {/* The invitation card */}
+          {/* The invitation card - Commented out to prevent flicker before image load */}
+          {/* 
           <div className="card-preview">
             <img 
               className="ganesha-mini"
@@ -58,6 +59,7 @@ export default function VideoIntro({ onOpen }) {
               चि. निलेश व चि. सौ. का. Xxx
             </div>
           </div>
+          */}
           
           {/* Front Bottom & Sides */}
           <img 
