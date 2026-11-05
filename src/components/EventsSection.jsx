@@ -5,52 +5,30 @@ const EVENTS_DATA = [
   {
     title: 'साखरपुडा (Engagement)',
     bg: weddingImage,
-    date: { day: 'Saturday', num: '12', monthYear: 'Dec 2026' },
-    time: '12:55 PM',
+    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी सकाळी १० वा. ३० मि. (विवाहस्थळी)',
     dark: false,
     tagline: 'नात्याची गोड सुरवात...',
-    venue: 'Radhakrishna Garden Mangal Karyalaya, Shivapur',
-    mapQuery: 'Radhakrishna Garden Mangal Karyalaya Shivapur'
   },
   {
     title: 'हळदी समारंभ (Haldi)',
     bg: weddingImage,
-    date: { day: 'Saturday', num: '12', monthYear: 'Dec 2026' },
-    time: '1:15 PM',
+    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी दुपारी १ वा. १५ मि. (विवाहस्थळी)',
     dark: false,
     tagline: 'पिवळ्या रंगाची उधळण आणि आनंदाची सुरवात!',
-    dresscode: {
-      colors: ['rgb(255, 204, 0)', 'rgb(255, 255, 255)'],
-      names: 'Yellow · White',
-      note: 'Traditional / Yellow theme'
-    },
-    venue: 'Radhakrishna Garden Mangal Karyalaya, Shivapur',
-    mapQuery: 'Radhakrishna Garden Mangal Karyalaya Shivapur'
   },
   {
     title: 'शुभविवाह (Wedding)',
     bg: weddingImage,
-    date: { day: 'Saturday', num: '12', monthYear: 'Dec 2026' },
-    time: '5:45 PM',
+    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी सायंकाळी ५ वा. ४५ मि. या शुभ मुहूर्तावर',
     dark: false,
     tagline: 'दोन हृदये, एक नवे आयुष्य...',
-    dresscode: {
-      colors: ['rgb(138, 32, 48)', 'rgb(212, 175, 55)', 'rgb(242, 234, 225)'],
-      names: 'Maroon · Gold · Ivory',
-      note: 'Traditional Indian'
-    },
-    venue: 'Radhakrishna Garden Mangal Karyalaya, Shivapur',
-    mapQuery: 'Radhakrishna Garden Mangal Karyalaya Shivapur'
   },
   {
     title: 'भोजन समारंभ (Reception)',
     bg: weddingImage,
-    date: { day: 'Saturday', num: '12', monthYear: 'Dec 2026' },
-    time: '6:00 PM - 9:00 PM',
+    marathiTime: 'सायंकाळी ६ ते ९ (विवाहस्थळी)',
     dark: false,
     tagline: 'स्वादाने भरलेला सहवास...',
-    venue: 'Radhakrishna Garden Mangal Karyalaya, Shivapur',
-    mapQuery: 'Radhakrishna Garden Mangal Karyalaya Shivapur'
   }
 ];
 
@@ -64,53 +42,15 @@ function EventBlock({ event }) {
             <h3 className={`event-invite-title ${event.dark ? 'dark-text' : ''}`} style={{ fontFamily: 'var(--font-marathi)' }}>
               {event.title}
             </h3>
-            <div className={`event-date-row ${event.dark ? 'dark-text' : ''}`}>
-              <span>{event.date.day}</span>
-              <span className="event-date-bar">|</span>
-              <span className="event-date-num">{event.date.num}</span>
-              <span className="event-date-bar">|</span>
-              <span>{event.date.monthYear}</span>
-            </div>
-            <div className={`event-invite-time ${event.dark ? 'dark-text' : ''}`}>
-              {event.time}
-            </div>
           </div>
         </div>
       </div>
 
       <div className="evt-details">
-        <p className="evt-tagline" style={{ fontFamily: 'var(--font-marathi)' }}>"{event.tagline}"</p>
-
-        {event.dresscode && (
-          <div className="evt-dresscode">
-            <span className="evt-dresscode-lbl">Dress code</span>
-            <div className="evt-dresscode-dots">
-              {event.dresscode.colors.map((c, i) => (
-                <span key={i} className="evt-dresscode-dot" style={{ background: c }} />
-              ))}
-            </div>
-            <span className="evt-dresscode-names">{event.dresscode.names}</span>
-            <span className="evt-dresscode-note">{event.dresscode.note}</span>
-          </div>
-        )}
-
-        <div className="evt-venue">
-          <span className="evt-venue-name">{event.venue}</span>
-          {event.mapQuery && (
-            <a
-              href={`https://maps.google.com/?q=${encodeURIComponent(event.mapQuery)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="evt-dir-btn"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-              GET DIRECTIONS
-            </a>
-          )}
-        </div>
+        <p className="evt-tagline" style={{ fontFamily: 'var(--font-marathi)', marginBottom: '0.75rem' }}>"{event.tagline}"</p>
+        <p className="evt-time-marathi" style={{ fontFamily: 'var(--font-marathi)', fontSize: '1.1rem', color: 'var(--sage-deep)', lineHeight: '1.6' }}>
+          {event.marathiTime}
+        </p>
       </div>
     </div>
   );
