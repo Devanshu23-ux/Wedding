@@ -40,16 +40,12 @@ function EventBlock({ event }) {
     <div className="event-block">
       <div className="event-invite-frame">
         <img className="event-invite-bg" src={event.bg} alt="" loading="lazy" />
-        <div className="event-invite-overlay">
-          <div className="event-invite-stack">
-            <h3 className={`event-invite-title ${event.dark ? 'dark-text' : ''}`} style={{ fontFamily: 'var(--font-marathi)' }}>
-              {event.title}
-            </h3>
-          </div>
-        </div>
       </div>
 
       <div className="evt-details">
+        <h3 style={{ fontFamily: 'var(--font-marathi)', color: 'var(--sage-dark)', fontSize: '1.8rem', marginBottom: '0.5rem' }}>
+          {event.title}
+        </h3>
         <p className="evt-tagline" style={{ fontFamily: 'var(--font-marathi)', marginBottom: '0.75rem' }}>"{event.tagline}"</p>
         <p className="evt-time-marathi" style={{ fontFamily: 'var(--font-marathi)', fontSize: '1.1rem', color: 'var(--sage-deep)', lineHeight: '1.6' }}>
           {event.marathiTime}
