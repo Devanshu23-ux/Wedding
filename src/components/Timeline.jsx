@@ -34,10 +34,10 @@ const EVENTS = [
   },
   {
     id: 'wedding',
-    date: 'FRIDAY, 11 DECEMBER 2026',
+    date: 'SATURDAY, 12 DECEMBER 2026',
     title: 'The Wedding',
     subtitle: 'The Muhurtham',
-    time: '6 PM onwards',
+    time: '5:45 PM onwards',
     venue: 'Taj Palace, Hyderabad',
     quote: 'The sacred vows — with your blessings.',
     hint: 'SCRATCH TO REVEAL',

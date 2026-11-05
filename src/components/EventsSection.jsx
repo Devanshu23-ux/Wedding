@@ -8,28 +8,28 @@ const EVENTS_DATA = [
   {
     title: 'साखरपुडा (Engagement)',
     bg: engagementImg,
-    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी सकाळी १० वा. ३० मि. (विवाहस्थळी)',
+    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी सकाळी १०\u00A0वा.\u00A0३०\u00A0मि. (विवाहस्थळी)',
     dark: false,
     tagline: 'नात्याची गोड सुरवात...',
   },
   {
     title: 'हळदी समारंभ (Haldi)',
     bg: haldiImg,
-    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी दुपारी १ वा. १५ मि. (विवाहस्थळी)',
+    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी दुपारी १\u00A0वा.\u00A0१५\u00A0मि. (विवाहस्थळी)',
     dark: false,
     tagline: 'पिवळ्या रंगाची उधळण आणि आनंदाची सुरवात!',
   },
   {
     title: 'शुभविवाह (Wedding)',
     bg: weddingImg,
-    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी सायंकाळी ५ वा. ४५ मि. या शुभ मुहूर्तावर',
+    marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी सायंकाळी ५\u00A0वा.\u00A0४५\u00A0मि. या शुभ मुहूर्तावर',
     dark: false,
     tagline: 'दोन हृदये, एक नवे आयुष्य...',
   },
   {
     title: 'भोजन समारंभ (Reception)',
     bg: foodImg,
-    marathiTime: 'सायंकाळी ६ ते ९ (विवाहस्थळी)',
+    marathiTime: 'सायंकाळी ६\u00A0ते\u00A0९ (विवाहस्थळी)',
     dark: false,
     tagline: 'स्वादाने भरलेला सहवास...',
   }

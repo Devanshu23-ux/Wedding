@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import weddingMusic from '../assets/vidssave.com Mangalashtaka _ Basta _ Shankar Mahadevan _ Sayali Sanjeev, Akshay Tanksale & Parth Bhalerao 240P.mp4';
 
-export default function FloatingControls() {
+export function AudioPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 

@@ -41,8 +41,8 @@ export default function Hero() {
         <p className="text-sm text-gray-600 mb-8 italic">at their wedding celebration</p>
 
         <div className="glass p-6 rounded-2xl inline-block text-center border-wedding-gold/30">
-          <p className="font-semibold text-wedding-wine text-lg mb-1">From 6:00 PM onwards</p>
-          <p className="font-bold text-gray-800 text-xl font-serif mb-2">Saturday, 11 December 2026</p>
+          <p className="font-semibold text-wedding-wine text-lg mb-1">From 5:45 PM onwards</p>
+          <p className="font-bold text-gray-800 text-xl font-serif mb-2">Saturday, 12 December 2026</p>
           <p className="text-sm text-gray-600">Venue: Taj Palace, Hyderabad</p>
         </div>
 
