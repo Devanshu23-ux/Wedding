@@ -20,7 +20,13 @@ export default function HeroSection() {
           <img
             className="sacred-bloom-logo"
             src={weddingLogo}
-            alt="Wedding Logo"
+            alt="Lord Ganpati wedding logo"
+          />
+          <img
+            className="sacred-bloom-center"
+            src={weddingLogo}
+            alt=""
+            aria-hidden="true"
           />
         </div>
         

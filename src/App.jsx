@@ -9,6 +9,7 @@ import VenueSection from './components/VenueSection';
 import EventsSection from './components/EventsSection';
 import FooterSection from './components/FooterSection';
 import { AudioPlayer } from './components/FloatingControls';
+import BuyNowButton from './components/BuyNowButton';
 
 export default function App() {
   const [hasEntered, setHasEntered] = useState(false);
@@ -55,6 +56,9 @@ export default function App() {
 
       {/* Floating Flower Petals Canvas */}
       {hasEntered && <PetalsCanvas active={true} />}
+
+      {/* Floating WhatsApp Buy Now Button */}
+      {hasEntered && <BuyNowButton />}
 
       {/* Main Content Area */}
       <div id="main-content" className={hasEntered ? 'visible' : ''}>
