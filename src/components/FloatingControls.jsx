@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import bgMusic from '../assets/do-dil-mil-rahe-hai.mp3';
+import weddingMusic from '../assets/vidssave.com Mangalashtaka _ Basta _ Shankar Mahadevan _ Sayali Sanjeev, Akshay Tanksale & Parth Bhalerao 240P.mp4';
 
-export function AudioPlayer() {
+export default function FloatingControls() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
@@ -9,8 +9,19 @@ export function AudioPlayer() {
     const audio = audioRef.current;
     if (!audio) return;
 
-    // Set initial start time to 38 seconds
-    audio.currentTime = 38;
+    // Set initial volume
+    audio.volume = 0.5;
+
+    // Set start time to 4.7 seconds
+    const setStartTime = () => {
+      audio.currentTime = 4.7;
+    };
+
+    if (audio.readyState >= 1) {
+      setStartTime();
+    } else {
+      audio.addEventListener('loadedmetadata', setStartTime, { once: true });
+    }
 
     const handlePlay = () => setIsPlaying(true);
     const handlePause = () => setIsPlaying(false);
@@ -19,6 +30,7 @@ export function AudioPlayer() {
     audio.addEventListener('pause', handlePause);
 
     return () => {
+      audio.removeEventListener('loadedmetadata', setStartTime);
       audio.removeEventListener('play', handlePlay);
       audio.removeEventListener('pause', handlePause);
     };
@@ -38,7 +50,7 @@ export function AudioPlayer() {
       <audio
         id="bg-music"
         ref={audioRef}
-        src={bgMusic}
+        src={weddingMusic}
         loop
         preload="auto"
       />
