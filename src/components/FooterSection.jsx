@@ -4,17 +4,20 @@ export default function FooterSection() {
   return (
     <footer id="footer-section">
       <div className="footer-msg">
-        <span>
-          Your presence will turn this real-life romance into a blockbuster we'll never forget.<br /><br />
-        </span>
-        <span>
-          Come, dance, laugh, and celebrate with us in true Bollywood style!
-        </span>
+        <div style={{ marginBottom: '1.5rem', fontFamily: 'var(--font-marathi)', fontSize: '1.1rem' }}>
+          * आपले स्नेहांकित *<br />
+          श्रीमती किसनाबाई राजाराम मारणे | श्री. तानाजी राजाराम मारणे<br />
+          श्री. शिवाजी राजाराम मारणे | सौ. मालन शिवाजी मारणे
+        </div>
       </div>
 
       <span className="footer-name">
-        Nilesh and XXXX
+        निलेश आणि पूजा
       </span>
+
+      <div className="footer-msg" style={{ marginTop: '2rem', fontFamily: 'var(--font-marathi)', fontSize: '1.3rem', fontWeight: 600 }}>
+        ।। समस्त मारणे परिवार ।।
+      </div>
 
       <div className="footer-credit">
         CRAFTED WITH ❤️ BY DEVANSHU JOSHI

@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function VenueSection() {
+  const venueImageUrl = 'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwZUNWoMuvscadAfLYy_rs5d1Hx5TomsI_Wui_CoDoN40gvhkUuBuIoGKDaFNAI7C7674WqRQnh6GD6JKQOZ-HTEtVAR4CIQjvbVRNyIQ3OUdIupPGFqVhmZD2fis0JUq_DAAh=w1000-h750-k-no';
+
   return (
     <section id="venue-section">
       <span className="sec-label">Where</span>
@@ -24,10 +26,14 @@ export default function VenueSection() {
           }}
         >
           <img
-            src="https://images.unsplash.com/photo-1545232979-fbf34f5ce757?q=80&w=1000"
+            src={venueImageUrl}
             alt="Venue"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             loading="lazy"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.target.src = 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1000';
+            }}
           />
           <div
             style={{
@@ -55,7 +61,7 @@ export default function VenueSection() {
               fontWeight: 600
             }}
           >
-            Radhakrishna Garden and Banquet Hall
+            Radhakrishna Garden Mangal Karyalaya
           </h3>
           <p
             style={{
@@ -67,14 +73,14 @@ export default function VenueSection() {
               marginBottom: '1.8rem'
             }}
           >
-            Pune,<br />
-            Maharashtra
+            Shivapur (Tolanaka), Haveli,<br />
+            Pune, Maharashtra
           </p>
 
           <button
             className="venue-btn"
             onClick={() =>
-              window.open('https://maps.google.com/?q=Radhakrishna+Garden+and+Banquet+Hall+Pune', '_blank')
+              window.open('https://maps.google.com/?q=Radhakrishna+Garden+Mangal+Karyalaya+Shivapur+Tolanaka+Pune', '_blank')
             }
           >
             <svg

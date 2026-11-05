@@ -46,12 +46,12 @@ export default function HeroSection() {
         </div>
 
         <div className="couple-name shimmer reveal">
-          चि. सौ. का. Xxx
+          चि. सौ. कां. पूजा
         </div>
 
         <div className="parent-sub reveal" style={{ lineHeight: '1.6', fontSize: '1rem', marginTop: '1rem' }}>
-          सुपुत्र – श्री. शिवाजी मारणे (मारणे परिवार, पुणे)<br />
-          सुपुत्री – श्री. Xxxx xxxx (xxxx परिवार, पुणे)
+          सुपुत्र – श्री. शिवाजी राजाराम मारणे (मारणे परिवार, पुणे)<br />
+          सुपुत्री – श्री. मनोज घोलप (घोलप परिवार, पुणे)
         </div>
       </div>
 

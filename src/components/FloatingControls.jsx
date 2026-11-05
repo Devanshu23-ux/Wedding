@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import bgMusic from '../assets/do-dil-mil-rahe-hai.mp3';
 
 export function AudioPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -7,6 +8,9 @@ export function AudioPlayer() {
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
+
+    // Set initial start time to 38 seconds
+    audio.currentTime = 38;
 
     const handlePlay = () => setIsPlaying(true);
     const handlePause = () => setIsPlaying(false);
@@ -34,7 +38,7 @@ export function AudioPlayer() {
       <audio
         id="bg-music"
         ref={audioRef}
-        src="https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/bg-music.mp3"
+        src={bgMusic}
         loop
         preload="auto"
       />

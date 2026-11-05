@@ -1,11 +1,22 @@
 import React from 'react';
+import weddingImage from '../assets/NILESH MARNE 2.jpg.jpeg';
 
 const EVENTS_DATA = [
   {
-    title: 'हळदी समारंभ (Haldi)',
-    bg: 'https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/events/carnival/37.png',
+    title: 'साखरपुडा (Engagement)',
+    bg: weddingImage,
     date: { day: 'Saturday', num: '12', monthYear: 'Dec 2026' },
-    time: '12:00 PM',
+    time: '12:55 PM',
+    dark: false,
+    tagline: 'नात्याची गोड सुरवात...',
+    venue: 'Radhakrishna Garden Mangal Karyalaya, Shivapur',
+    mapQuery: 'Radhakrishna Garden Mangal Karyalaya Shivapur'
+  },
+  {
+    title: 'हळदी समारंभ (Haldi)',
+    bg: weddingImage,
+    date: { day: 'Saturday', num: '12', monthYear: 'Dec 2026' },
+    time: '1:15 PM',
     dark: false,
     tagline: 'पिवळ्या रंगाची उधळण आणि आनंदाची सुरवात!',
     dresscode: {
@@ -13,12 +24,12 @@ const EVENTS_DATA = [
       names: 'Yellow · White',
       note: 'Traditional / Yellow theme'
     },
-    venue: 'Radhakrishna Garden and Banquet Hall, Pune',
-    mapQuery: 'Radhakrishna Garden and Banquet Hall Pune'
+    venue: 'Radhakrishna Garden Mangal Karyalaya, Shivapur',
+    mapQuery: 'Radhakrishna Garden Mangal Karyalaya Shivapur'
   },
   {
     title: 'शुभविवाह (Wedding)',
-    bg: 'https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/events/phere/44.png',
+    bg: weddingImage,
     date: { day: 'Saturday', num: '12', monthYear: 'Dec 2026' },
     time: '5:45 PM',
     dark: false,
@@ -28,8 +39,18 @@ const EVENTS_DATA = [
       names: 'Maroon · Gold · Ivory',
       note: 'Traditional Indian'
     },
-    venue: 'Radhakrishna Garden and Banquet Hall, Pune',
-    mapQuery: 'Radhakrishna Garden and Banquet Hall Pune'
+    venue: 'Radhakrishna Garden Mangal Karyalaya, Shivapur',
+    mapQuery: 'Radhakrishna Garden Mangal Karyalaya Shivapur'
+  },
+  {
+    title: 'भोजन समारंभ (Reception)',
+    bg: weddingImage,
+    date: { day: 'Saturday', num: '12', monthYear: 'Dec 2026' },
+    time: '6:00 PM - 9:00 PM',
+    dark: false,
+    tagline: 'स्वादाने भरलेला सहवास...',
+    venue: 'Radhakrishna Garden Mangal Karyalaya, Shivapur',
+    mapQuery: 'Radhakrishna Garden Mangal Karyalaya Shivapur'
   }
 ];
 

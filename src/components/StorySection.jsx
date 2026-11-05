@@ -1,25 +1,31 @@
 import React, { useEffect, useRef } from 'react';
+import img1 from '../assets/WhatsApp Image 2026-10-28 at 21.44.24 (1).jpeg';
+import img2 from '../assets/WhatsApp Image 2026-10-28 at 21.44.24.jpeg';
+import img3 from '../assets/WhatsApp Image 2026-10-28 at 21.44.25 (1).jpeg';
+import img4 from '../assets/WhatsApp Image 2026-10-28 at 21.44.25 (2).jpeg';
+import img5 from '../assets/WhatsApp Image 2026-10-28 at 21.44.25 (3).jpeg';
+import img6 from '../assets/WhatsApp Image 2026-10-28 at 21.44.25.jpeg';
+import img7 from '../assets/WhatsApp Image 2026-10-28 at 21.44.26.jpeg';
+import img8 from '../assets/WhatsApp Image 2026-10-28 at 21.44.27 (1).jpeg';
+import img9 from '../assets/WhatsApp Image 2026-10-28 at 21.44.27.jpeg';
+import img10 from '../assets/WhatsApp Image 2026-10-28 at 21.44.28 (1).jpeg';
+import img11 from '../assets/WhatsApp Image 2026-10-28 at 21.44.28.jpeg';
 
 const STORIES = [
-  {
-    src: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1000',
-    cap: 'Memories together'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000',
-    cap: 'Written in the stars'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000',
-    cap: 'Joy and laughter'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1000',
-    cap: 'Forever Us'
-  }
+  { src: img1, cap: 'Love & Laughter' },
+  { src: img2, cap: 'Beautiful Beginnings' },
+  { src: img3, cap: 'Captured Moments' },
+  { src: img4, cap: 'Sweet Memories' },
+  { src: img5, cap: 'Together Always' },
+  { src: img6, cap: 'Pure Joy' },
+  { src: img7, cap: 'Forever Us' },
+  { src: img8, cap: 'Hand in Hand' },
+  { src: img9, cap: 'Our Journey' },
+  { src: img10, cap: 'Infinite Love' },
+  { src: img11, cap: 'Written in the Stars' }
 ];
 
-const ROTATIONS = [-2.5, 1.8, -1.5, 2.2];
+const ROTATIONS = [-2.5, 1.8, -1.5, 2.2, -2.0, 1.5, -1.8, 2.0, -2.2, 1.6, -1.4];
 
 export default function StorySection() {
   const containerRef = useRef(null);
