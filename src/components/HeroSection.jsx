@@ -41,7 +41,7 @@ export default function HeroSection() {
 
         <div className="amp-row reveal">
           <span className="amp-line" />
-          <span className="amp" style={{ fontFamily: 'var(--font-marathi-bold)' }}>व</span>
+          <span className="amp">व</span>
           <span className="amp-line" />
         </div>
 
