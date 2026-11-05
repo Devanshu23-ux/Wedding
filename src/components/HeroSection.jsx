@@ -1,4 +1,5 @@
 import React from 'react';
+import weddingLogo from '../assets/Weddinglogo.png';
 
 export default function HeroSection() {
   const scrollToNext = () => {
@@ -15,14 +16,13 @@ export default function HeroSection() {
       </div>
       
       <div className="hero-card">
-        <img
-          className="hero-icon reveal"
-          src="https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/ganesha.png"
-          alt="Ganesha"
-          onError={(e) => {
-            e.target.style.display = 'none';
-          }}
-        />
+        <div className="sacred-bloom-container reveal">
+          <img
+            className="sacred-bloom-logo"
+            src={weddingLogo}
+            alt="Wedding Logo"
+          />
+        </div>
         
         <div className="god-quote reveal" style={{ fontFamily: 'var(--font-marathi)' }}>
           ॥ श्री गणेशाय नमः ॥<br />
