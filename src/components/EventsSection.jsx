@@ -1,31 +1,34 @@
 import React from 'react';
-import weddingImage from '../assets/NILESH MARNE 2.jpg.jpeg';
+import engagementImg from '../assets/engagement.jpeg';
+import haldiImg from '../assets/haldi.jpeg';
+import weddingImg from '../assets/wedding.jpeg';
+import foodImg from '../assets/food.jpeg';
 
 const EVENTS_DATA = [
   {
     title: 'साखरपुडा (Engagement)',
-    bg: weddingImage,
+    bg: engagementImg,
     marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी सकाळी १० वा. ३० मि. (विवाहस्थळी)',
     dark: false,
     tagline: 'नात्याची गोड सुरवात...',
   },
   {
     title: 'हळदी समारंभ (Haldi)',
-    bg: weddingImage,
+    bg: haldiImg,
     marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी दुपारी १ वा. १५ मि. (विवाहस्थळी)',
     dark: false,
     tagline: 'पिवळ्या रंगाची उधळण आणि आनंदाची सुरवात!',
   },
   {
     title: 'शुभविवाह (Wedding)',
-    bg: weddingImage,
+    bg: weddingImg,
     marathiTime: 'शनिवार दि. १२/१२/२०२६ रोजी सायंकाळी ५ वा. ४५ मि. या शुभ मुहूर्तावर',
     dark: false,
     tagline: 'दोन हृदये, एक नवे आयुष्य...',
   },
   {
     title: 'भोजन समारंभ (Reception)',
-    bg: weddingImage,
+    bg: foodImg,
     marathiTime: 'सायंकाळी ६ ते ९ (विवाहस्थळी)',
     dark: false,
     tagline: 'स्वादाने भरलेला सहवास...',
