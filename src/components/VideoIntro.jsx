@@ -55,8 +55,8 @@ export default function VideoIntro({ onOpen }) {
               src="https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/ganesha.png" 
               alt="Ganesha" 
             />
-            <div className="card-text">
-              चि. निलेश व चि. सौ. का. Xxx
+            <div className="card-text" style={{ fontFamily: 'var(--font-marathi)' }}>
+              चि. निलेश व चि. सौ. का. पुजा
             </div>
           </div>
           */}

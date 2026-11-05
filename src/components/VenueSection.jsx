@@ -70,11 +70,23 @@ export default function VenueSection() {
               color: '#a08070',
               fontSize: '1rem',
               lineHeight: 1.7,
-              marginBottom: '1.8rem'
+              marginBottom: '1rem'
             }}
           >
             Shivapur (Tolanaka), Haveli,<br />
             Pune, Maharashtra
+          </p>
+          <p
+            style={{
+              fontFamily: 'var(--font-marathi)',
+              color: 'var(--sage-deep)',
+              fontSize: '1.1rem',
+              lineHeight: 1.5,
+              marginBottom: '1.8rem'
+            }}
+          >
+            राधाकृष्ण गार्डन मंगल कार्यालय<br />
+            मु. पो. शिवापूर (टोलनाका) ता. हवेली जि. पुणे
           </p>
 
           <button

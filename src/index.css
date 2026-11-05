@@ -31,6 +31,8 @@
   --font-sans: "Tenor Sans", sans-serif;
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-script: "Italianno", cursive;
+  --font-marathi: "Yatra One", system-ui;
+  --font-marathi-bold: "Modak", system-ui;
   --stable-vh: 100svh;
 }
 
@@ -505,7 +507,7 @@ a {
 }
 
 .couple-name {
-  font-family: var(--font-display);
+  font-family: var(--font-marathi);
   text-align: center;
   letter-spacing: 0.02em;
   width: 100%;

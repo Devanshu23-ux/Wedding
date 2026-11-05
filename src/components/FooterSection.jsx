@@ -11,8 +11,8 @@ export default function FooterSection() {
         </div>
       </div>
 
-      <span className="footer-name">
-        निलेश आणि पूजा
+      <span className="footer-name" style={{ fontFamily: 'var(--font-marathi)' }}>
+        निलेश आणि पुजा
       </span>
 
       <div className="footer-msg" style={{ marginTop: '2rem', fontFamily: 'var(--font-marathi)', fontSize: '1.3rem', fontWeight: 600 }}>

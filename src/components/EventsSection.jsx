@@ -61,7 +61,7 @@ function EventBlock({ event }) {
         <img className="event-invite-bg" src={event.bg} alt="" loading="lazy" />
         <div className="event-invite-overlay">
           <div className="event-invite-stack">
-            <h3 className={`event-invite-title ${event.dark ? 'dark-text' : ''}`}>
+            <h3 className={`event-invite-title ${event.dark ? 'dark-text' : ''}`} style={{ fontFamily: 'var(--font-marathi)' }}>
               {event.title}
             </h3>
             <div className={`event-date-row ${event.dark ? 'dark-text' : ''}`}>
@@ -79,7 +79,7 @@ function EventBlock({ event }) {
       </div>
 
       <div className="evt-details">
-        <p className="evt-tagline">"{event.tagline}"</p>
+        <p className="evt-tagline" style={{ fontFamily: 'var(--font-marathi)' }}>"{event.tagline}"</p>
 
         {event.dresscode && (
           <div className="evt-dresscode">
