@@ -9,5 +9,5 @@ export const CONTACT = {
 
   // Pre-written message sent when someone taps the floating BUY NOW button
   buyMessage:
-    'Hi! I want to order a wedding invitation like this one. Please share the price and details.',
+    'Hi! I want to order a wedding invitation like this one. Please share the price and details.\n\nView the invitation: https://nilesh-pooja-wedding.vercel.app/',
 };
